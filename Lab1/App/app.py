@@ -16,4 +16,4 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     hostname = socket.gethostname()
-    return 'db: {}'.format(mydb) # + 'Hello World! I am {}\n'.format(hostname)
+    return 'db: {}'#.format(mydb) # + 'Hello World! I am {}\n'.format(hostname)

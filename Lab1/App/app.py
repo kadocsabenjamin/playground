@@ -6,11 +6,11 @@ import mysql.connector
 app = Flask(__name__)
 
 
-mydb = mysql.connector.connect(
-  host="lab1_db_1",
-  user="bb",
-  password="ab"
-)
+# mydb = mysql.connector.connect(
+#   host="lab1_db_1",
+#   user="bb",
+#   password="ab"
+# )
 
 
 @app.route('/')

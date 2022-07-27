@@ -11,5 +11,5 @@ services:
       MYSQL_USER: bb
       MYSQL_PASSWORD: ab
     ports:
-      - "5432:3306"
+      - "3306:3306"
 

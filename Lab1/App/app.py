@@ -16,4 +16,4 @@ app.config['MYSQL_DB'] = 'MyDB'
 @app.route('/')
 def hello():
     hostname = socket.gethostname()
-    return 'db: {}'.format(mydb) # + 'Hello World! I am {}\n'.format(hostname)
+    return 'db:' # + 'Hello World! I am {}\n'.format(hostname)

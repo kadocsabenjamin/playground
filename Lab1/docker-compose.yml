@@ -1,10 +1,13 @@
 version: '3.3'
 services:
   web:
-    build: .
+    image: lab1
     ports:
       - "5000:5000"
   db:
     image: mysql:8.0.30
+    environment:
+      MYSQL_ROOT_PASSWORD: aa
     ports:
       - "5432:3306"
+

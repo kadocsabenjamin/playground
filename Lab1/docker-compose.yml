@@ -1,9 +1,5 @@
 version: '3.3'
 services:
-  web:
-    build: .
-    ports:
-      - "5000:5000"
   db:
     image: mysql:8.0.30
     environment:
@@ -12,4 +8,11 @@ services:
       MYSQL_PASSWORD: aa
     ports:
       - "3306:3306"
+
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
 

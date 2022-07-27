@@ -14,5 +14,4 @@ mydb = mysql.connector.connect(
 
 @app.route('/')
 def hello():
-    hostname = socket.gethostname()
     return 'db: hello'#.format(mydb) # + 'Hello World! I am {}\n'.format(hostname)

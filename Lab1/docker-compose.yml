@@ -8,8 +8,8 @@ services:
     image: mysql:8.0.30
     environment:
       MYSQL_ROOT_PASSWORD: aa
-      MYSQL_USER: bb
-      MYSQL_PASSWORD: ab
+      MYSQL_USER: aa
+      MYSQL_PASSWORD: aa
     ports:
       - "3306:3306"
 

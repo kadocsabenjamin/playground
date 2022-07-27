@@ -1,16 +1,16 @@
 import socket
 from flask import Flask
-import mysql.connector
+
+from flask_mysqldb import MySQL
 
 
 app = Flask(__name__)
 
+app.config['MYSQL_HOST'] = 'lab1_db_1'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'root'
+app.config['MYSQL_DB'] = 'MyDB'
 
-mydb = mysql.connector.connect(
-  host="lab1_db_1",
-  user="bb",
-  password="ab"
-)
 
 
 @app.route('/')

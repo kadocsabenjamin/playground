@@ -16,3 +16,5 @@ services:
     depends_on:
       - db
 
+network:
+  anetwork:
